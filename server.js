@@ -7,7 +7,7 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 import path from "path";
-import {fileURLToPath} from 'url';
+import { fileURLToPath } from "url";
 
 dotenv.config();
 
@@ -39,5 +39,5 @@ app.use("*", function (req, res) {
 });
 
 app.listen(PORT, () => {
-  console.log("Server is running on 8000");
+  console.log(`Server running on ${PORT}`);
 });
